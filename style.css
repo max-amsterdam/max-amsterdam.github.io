@@ -7,17 +7,22 @@ body{
 }
 
 ul {
-    list-style-type: none;
-    overflow: hidden;
-    width: 70%;
-    margin: auto;
+    list-style: none;
+    text-align: center;
 }
 
 li {
-    display: inline;
-    white-space:nowrap;
-    padding: 14px 16px;
+    display: inline-block; 
+    padding: 15px 5% ;
 }
-h1 {
-    color: pink;
+
+li a {
+    color: #86B3D1;
+    text-decoration: none;
 }
+
+li a:hover{
+    color: white;
+}
+
+
