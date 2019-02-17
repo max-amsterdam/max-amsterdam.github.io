@@ -1,0 +1,23 @@
+body{
+    background-color: #86B3D1;
+}
+
+#navbar {
+    background-color: #315587;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+
+li {
+    display: inline;
+    white-space:nowrap;
+    padding: 14px 16px;
+}
+h1 {
+    color: pink;
+}
