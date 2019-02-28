@@ -1,21 +1,110 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-	<title>Max Amsterdam</title>
-	<link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<div id = "navbar">
-	    <ul id = "header">
-		<li><a href = "home.html">Home</a></li>
-		<li><a href = "https://owlsports.com/images/2017/10/24/Hudson.jpg?width=300">About</a></li>
-		<li><a href = "projects.html">Projects</a></li>
-		<li><a href = "contact.html">Contact</a></li>
-	    </ul>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Max Amsterdam</title>
+    </head>
+
+    <body>
+	<div class="container-fluid-nav text-center">	
+	    <nav id="navbar" class="nav navbar-dark fixed-top bg-light">
+		<a class="nav-item dropdown" href = "#" id="navbarDropdown"
+		    role="button" data-toggle="dropdown" aria-haspopup="true"
+		    aria-expanded="false">
+		    &#9776;
+		</a>	
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		    <a class="dropdown-item" href = "#home-container">Max Amsterdam</a>	
+		    <a class="dropdown-item" href = "#about-container">About</a>	
+		    <a class="dropdown-item" href = "#projects-container">Projects</a>	
+		    <a class="dropdown-item" href = "#rowing-container">Rowing</a>	
+		    <a class="dropdown-item" href = "#contact-container">Contact</a>	
+		</div>
+		<a class="nav-item nav-link" href = "#home-container">Max Amsterdam</a>	
+		<a class="nav-item nav-link" href = "#about-container">About</a>	
+		<a class="nav-item nav-link" href = "#projects-container">Projects</a>	
+		<a class="nav-item nav-link" href = "#rowing-container">Rowing</a>	
+		<a class="nav-item nav-link" href = "#contact-container">Contact</a>	
+	    </nav>
 	</div>
-	<div id = "photo">
+
+
+
+
+
+
+	<div id="home-container" class="container fill">
+	    <div>
+		<h1 id="home-header">
+		    Max Amsterdam	
+		</h1>
+	    </div>
 	</div>
+
+	<div id="about-container" class="container fill">
+	    <div>
+		<h3 id="about-header">
+		    About
+		</h3>
+		<p>
+		Lorem ipsum dolor sit amet, vis sensibus salutandi ex, amet saperet graecis te vim. Amet admodum scriptorem est ad, efficiantur contentiones pro an. Corpora constituto est in, clita ceteros eos ad. Bonorum ponderum mei ne, vivendo inciderint id duo. Ne est wisi nulla fastidii, mundi laoreet eligendi eum id, falli conclusionemque at vel.
+		</p>
+	    </div>
+	</div>
+
+	<div id="projects-container" class="container fill">
+	    <div>
+		<h3 id="projects-header">
+		    Projects	
+		</h3>
+		<div id="proj1" class="container">
+		    <h5>
+			Project 1
+		    </h5> 
+		</div>
+		<div id="proj2" class="container">
+		    <h5>
+			Project 2 
+		    </h5> 
+		</div>
+	    </div>
+	</div>
+
+	<div id="rowing-container" class="container fill">
+	    <div>
+		<h3 id="rowing-header">
+		    Rowing	
+		</h3>
+		<div class="videoWrapper" id="videos">
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/bVeNcb4dKZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	    </div>
+	</div>
+
+	<div id="contact-container" class="container fill">
+	    <div>
+		<h3 id="contact-header">
+		    Contact	
+		</h3>
+		<p>
+		Email: maxwell.amsterdam@columbia.edu
+		Phone: 610-312-9011
+		</p>
+	    </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script>
+	    $('body').scrollspy({ target: '#navbar', offset: 75});
+	    $('body').scrollspy({ target: '#dropdown-menu', offset: 75});
+	</script>
     </body>
+
 </html>
