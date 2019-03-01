@@ -2,12 +2,6 @@
     display:none;
 }
 
-#navbarDropdown {
-    height: 40px;
-    font-size: 28px;
-    text-decoration:none;
-}
-
 .videoWrapper{
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -21,6 +15,8 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	max-width: 560px;
+	max-height: 315px;
 }
 
 html {
@@ -41,14 +37,30 @@ body {
 	display:none;
     }
 }
-
-.fill{
-    min-height: 100%;
-    height: 100%;
-    padding-top:60px;
-    box-sizing:border-box;
+#profile-pic{
+    max-height:1000px;
+    width:auto;
 }
+
+[id$="-container"]{
+    padding-top:60px;
+    background-color:lightgray;
+}
+
+
 
 .nav > a.active {
     background-color: darkgray;
+}
+.navbar-toggler-icon {
+    margin-left:6px;
+    background-color:lightgray;
+}
+
+.project-image {
+    width : auto; 
+    height: auto;
+
+    max-width: 400px;
+    max-height: 400px;
 }
