@@ -10,131 +10,267 @@
     </head>
 
     <body>
-	<div class="container-fluid-nav text-center">	
-	    <nav id="navbar" class="nav navbar-dark fixed-top bg-light">
-		<a class="nav-item dropdown" href = "#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    <span class="navbar-toggler-icon"></span>
-		</a>	
-		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		    <a class="dropdown-item" 
-		       onclick='goToByScroll("home-container")'
-		       href="#home-container">Max Amsterdam</a>	
-		    <a class="dropdown-item" href="#about-container" 
-					     onclick='goToByScroll("about-container")'>About</a>	
-		    <a class="dropdown-item" href="#projects-container"
-					     onclick='goToByScroll("projects-container")'>Projects</a>	
-		    <a class="dropdown-item" href="#rowing-container"
-					     onclick='goToByScroll("rowing-container")'>Rowing</a>	
-		    <a class="dropdown-item" href="#contact-container"
-					     onclick='goToByScroll("contact-container")'>Contact</a>	
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col d-none d-md-block" id="sidebar">
+		    <nav id="navbar" class="sidebar sticky-top text-center">
+			<a id="hello" class="nav-item nav-link" onclick='goToByScroll("home-container")'
+				      href="#home-container">Max Amsterdam</a>	
+			<a class="nav-item nav-link" href="#about-container"
+						     onclick='goToByScroll("about-container")'>About</a>	
+			<a class="nav-item nav-link" href="#projects-container"
+						     onclick='goToByScroll("projects-container")'>Projects</a>	
+			<a class="nav-item nav-link" href="#rowing-container"
+						     onclick='goToByScroll("rowing-container")'>Rowing</a>	
+			<a class="nav-item nav-link" href="#contact-container"
+						     onclick='goToByScroll("contact-container")'>Contact</a>	
+		    </nav>
 		</div>
-		<a id="hello" class="nav-item nav-link" onclick='goToByScroll("home-container")'
-		   href="#home-container">Max Amsterdam</a>	
-		<a class="nav-item nav-link" href="#about-container"
-					     onclick='goToByScroll("about-container")'>About</a>	
-		<a class="nav-item nav-link" href="#projects-container"
-					     onclick='goToByScroll("projects-container")'>Projects</a>	
-		<a class="nav-item nav-link" href="#rowing-container"
-					     onclick='goToByScroll("rowing-container")'>Rowing</a>	
-		<a class="nav-item nav-link" href="#contact-container"
-					     onclick='goToByScroll("contact-container")'>Contact</a>	
-	    </nav>
-	</div>
 
-	<div id="home-container" class="container justify-content-center
-	    text-center fill">
-	    <div>
-		<img id="profile-pic" class="rounded"src="profile_pic.jpg" alt="">
-		<h1 id="home-header">
-		    Hi, I'm Max	
-		</h1>
-	    </div>
-	</div>
-
-	<div id="about-container" class="container-fluid fill">
-	    <div>
-		<h3 id="about-header">
-		    About
-		</h3>
-		<p>
-		Lorem ipsum dolor sit amet, vis sensibus salutandi ex, amet saperet graecis te vim. Amet admodum scriptorem est ad, efficiantur contentiones pro an. Corpora constituto est in, clita ceteros eos ad. Bonorum ponderum mei ne, vivendo inciderint id duo. Ne est wisi nulla fastidii, mundi laoreet eligendi eum id, falli conclusionemque at vel.
-		</p>
-	    </div>
-	</div>
-
-	<div id="projects-container" class="container fill">
-	    <div>
-		<h3 id="projects-header">
-		    Projects	
-		</h3>
-		<div class="row">
-		    <div id="proj1" class="col justify-content-center
-			text-center">
-			<img class="img-fluid rounded" src="gears.jpg" alt="">
-			<h5>
-			   C150Data.com 
-			</h5> 
-			<p>
-			I am currently working on creating a website for my
-			rowing team that ranks the rowers on the team in real
-			time using the TrainingPeaks API. Stay tuned for
-			updates.
-			</p>
+		<div class="col" id="main-content">
+		    <nav class="fixed-top" id="dropdown">
+			<a class="nav-item dropdown" href = "#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span class="navbar-toggler-icon"></span>
+			</a>	
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			    <a class="dropdown-item" href="#home-container"
+						     onclick='goToByScroll("home-container")'>Max Amsterdam</a>	
+			    <a class="dropdown-item" href="#about-container" 
+						     onclick='goToByScroll("about-container")'>About</a>	
+			    <a class="dropdown-item" href="#projects-container"
+						     onclick='goToByScroll("projects-container")'>Projects</a>	
+			    <a class="dropdown-item" href="#rowing-container"
+						     onclick='goToByScroll("rowing-container")'>Rowing</a>	
+			    <a class="dropdown-item" href="#contact-container"
+						     onclick='goToByScroll("contact-container")'>Contact</a>	
+			</div>
+		    </nav>
+		    <div id="home-container" class="container-fluid justify-content-center
+		    text-center fill">
+			<div class="row">
+			    <div class="col">
+				<img id="profile-pic" class="img-fluid rounded" src="photos/profile_pic.jpg" alt="">
+			    </div>
+			    <div class="col my-auto">
+				<h1 id="home-header">
+				    Hi, I'm Max	
+				</h1>
+			    </div>
+			</div>
 		    </div>
-		    <div id="proj2" class="col justify-content-center
-			text-center">
-			<img class="img-fluid rounded"
-			src="https://www.telegraph.co.uk/content/dam/technology/2017/08/03/Internet2_trans_NvBQzQNjv4BqJRZdqtQCcB0-hjTaQxsqmtMZZIw9jvU_z2DJKltQ1FE.jpg?imwidth=450" alt="">
 
-			<h5>
-			    Personal Website 
-			</h5> 
-			<p> 
-			You're using one of my projects right now! Check out the
-			source code <a
-			    href="https://github.com/max-amsterdam/max-amsterdam.github.io"
-			    target="_blank">here</a>.
-			</p>
+		    <div id="about-container" class="container-fluid fill">
+			<div>
+			    <h3 id="about-header">
+				About
+			    </h3>
+			    <p>
+			    Lorem ipsum dolor sit amet, vis sensibus salutandi ex, amet saperet graecis te vim. Amet admodum scriptorem est ad, efficiantur contentiones pro an. Corpora constituto est in, clita ceteros eos ad. Bonorum ponderum mei ne, vivendo inciderint id duo. Ne est wisi nulla fastidii, mundi laoreet eligendi eum id, falli conclusionemque at vel.
+			    </p>
+			</div>
+		    </div>
+
+		    <div id="projects-container" class="container fill">
+			<div>
+			    <h3 id="projects-header">
+				Projects	
+			    </h3>
+			    <div class="row">
+				<div id="proj1" class="col justify-content-center
+				text-center">
+				    <img class="img-fluid rounded" src="photos/gears.jpg" alt="">
+				    <h5>
+					C150Data.com 
+				    </h5> 
+				    <p>
+				    I am currently working on creating a website for my
+				    rowing team that ranks the rowers on the team in real
+				    time using the TrainingPeaks API. Stay tuned for
+				    updates.
+				    </p>
+				</div>
+				<div id="proj2" class="col justify-content-center
+				text-center">
+				    <img class="img-fluid rounded"
+					 src="https://www.telegraph.co.uk/content/dam/technology/2017/08/03/Internet2_trans_NvBQzQNjv4BqJRZdqtQCcB0-hjTaQxsqmtMZZIw9jvU_z2DJKltQ1FE.jpg?imwidth=450" alt="">
+
+				    <h5>
+					Personal Website 
+				    </h5> 
+				    <p> 
+				    You're using one of my projects right now! Check out the
+				    source code <a
+						    href="https://github.com/max-amsterdam/max-amsterdam.github.io"
+						    target="_blank">here</a>.
+				    </p>
+				</div>
+			    </div>
+			</div>
+		    </div>
+
+		    <div id="rowing-container" class="container justify-content-center
+		    text-center fill">
+			<div>
+			    <h3 id="rowing-header">
+				Rowing	
+			    </h3>
+			    <div class="videoWrapper" id="videos">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/bVeNcb4dKZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			    </div>
+			</div>
+		    </div>
+
+		    <div id="contact-container" class="container-fluid fill">
+			<div>
+			    <h3 id="contact-header">
+				Contact	
+			    </h3>
+			    <p>
+			    Email: maxwell.amsterdam@columbia.edu
+			    Phone: 610-312-9011
+			    </p>
+			</div>
 		    </div>
 		</div>
 	    </div>
 	</div>
 
-	<div id="rowing-container" class="container justify-content-center
-	    text-center fill">
-	    <div>
-		<h3 id="rowing-header">
-		    Rowing	
-		</h3>
-		<div class="videoWrapper" id="videos">
-		    <iframe width="560" height="315" src="https://www.youtube.com/embed/bVeNcb4dKZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	    </div>
-	</div>
 
-	<div id="contact-container" class="container-fluid fill">
-	    <div>
-		<h3 id="contact-header">
-		    Contact	
-		</h3>
-		<p>
-		Email: maxwell.amsterdam@columbia.edu
-		Phone: 610-312-9011
-		</p>
-	    </div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script
-	    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	    crossorigin="anonymous"></script>
-	<script>
-	    $('body').scrollspy({ target: '#navbar', offset: 75});
-	</script>
-	<script src="script.js"></script>
+
+
+
+
+	<!--	<div class="container-fluid-nav text-center">	
+     <nav id="navbar" class="sidebar navbar-dark bg-light">
+     <a class="nav-item dropdown" href = "#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <span class="navbar-toggler-icon"></span>
+     </a>	
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+     <a class="dropdown-item" 
+     onclick='goToByScroll("home-container")'
+     href="#home-container">Max Amsterdam</a>	
+     <a class="dropdown-item" href="#about-container" 
+     onclick='goToByScroll("about-container")'>About</a>	
+     <a class="dropdown-item" href="#projects-container"
+     onclick='goToByScroll("projects-container")'>Projects</a>	
+     <a class="dropdown-item" href="#rowing-container"
+     onclick='goToByScroll("rowing-container")'>Rowing</a>	
+     <a class="dropdown-item" href="#contact-container"
+     onclick='goToByScroll("contact-container")'>Contact</a>	
+     </div>
+     <div class="sidebar-header">
+     <a id="hello" class="nav-item nav-link" onclick='goToByScroll("home-container")'
+     href="#home-container">Max Amsterdam</a>	
+     </div>
+     <a class="nav-item nav-link" href="#about-container"
+     onclick='goToByScroll("about-container")'>About</a>	
+     <a class="nav-item nav-link" href="#projects-container"
+     onclick='goToByScroll("projects-container")'>Projects</a>	
+     <a class="nav-item nav-link" href="#rowing-container"
+     onclick='goToByScroll("rowing-container")'>Rowing</a>	
+     <a class="nav-item nav-link" href="#contact-container"
+     onclick='goToByScroll("contact-container")'>Contact</a>	
+     </nav>
+     </div> -->
+
+     <!--	<div id="home-container" class="container justify-content-center
+	 text-center fill">
+	 <div style="background-color:blue" class="row">
+	 <div class="col">
+	 <img id="profile-pic" class="img-fluid rounded" src="photos/profile_pic.jpg" alt="">
+	 </div>
+	 <div style="background-color:red" class="col my-auto">
+	 <h1 id="home-header">
+	 Hi, I'm Max	
+	 </h1>
+	 </div>
+	 </div>
+	 </div>
+
+	 <div id="about-container" class="container-fluid fill">
+	 <div>
+	 <h3 id="about-header">
+	 About
+	 </h3>
+	 <p>
+	 Lorem ipsum dolor sit amet, vis sensibus salutandi ex, amet saperet graecis te vim. Amet admodum scriptorem est ad, efficiantur contentiones pro an. Corpora constituto est in, clita ceteros eos ad. Bonorum ponderum mei ne, vivendo inciderint id duo. Ne est wisi nulla fastidii, mundi laoreet eligendi eum id, falli conclusionemque at vel.
+	 </p>
+	 </div>
+	 </div>
+
+	 <div id="projects-container" class="container fill">
+	 <div>
+	 <h3 id="projects-header">
+	 Projects	
+	 </h3>
+	 <div class="row">
+	 <div id="proj1" class="col justify-content-center
+	 text-center">
+	 <img class="img-fluid rounded" src="photos/gears.jpg" alt="">
+	 <h5>
+	 C150Data.com 
+	 </h5> 
+	 <p>
+	 I am currently working on creating a website for my
+	 rowing team that ranks the rowers on the team in real
+	 time using the TrainingPeaks API. Stay tuned for
+	 updates.
+	 </p>
+	 </div>
+	 <div id="proj2" class="col justify-content-center
+	 text-center">
+	 <img class="img-fluid rounded"
+	 src="https://www.telegraph.co.uk/content/dam/technology/2017/08/03/Internet2_trans_NvBQzQNjv4BqJRZdqtQCcB0-hjTaQxsqmtMZZIw9jvU_z2DJKltQ1FE.jpg?imwidth=450" alt="">
+
+	 <h5>
+	 Personal Website 
+	 </h5> 
+	 <p> 
+	 You're using one of my projects right now! Check out the
+	 source code <a
+	 href="https://github.com/max-amsterdam/max-amsterdam.github.io"
+	 target="_blank">here</a>.
+	 </p>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+
+	 <div id="rowing-container" class="container justify-content-center
+	 text-center fill">
+	 <div>
+	 <h3 id="rowing-header">
+	 Rowing	
+	 </h3>
+	 <div class="videoWrapper" id="videos">
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/bVeNcb4dKZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	 </div>
+	 </div>
+	 </div>
+
+	 <div id="contact-container" class="container-fluid fill">
+	 <div>
+	 <h3 id="contact-header">
+	 Contact	
+	 </h3>
+	 <p>
+	 Email: maxwell.amsterdam@columbia.edu
+	 Phone: 610-312-9011
+	 </p>
+	 </div>
+	 </div> -->
+	 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		 crossorigin="anonymous"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	 <script
+	     src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	     crossorigin="anonymous"></script>
+	 <script>
+	     $('body').scrollspy({ target: '#navbar', offset: 75});
+	 </script>
+	 <script src="script.js"></script>
     </body>
 
 </html>
