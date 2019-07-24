@@ -1,8 +1,10 @@
 function goToByScroll(id){
     $('html,body').animate({scrollTop:
-	$("#"+id).offset().top}, .001);
+	$("#"+id).offset().top -50}, .001);
     return false;
 }
+
+$('body').scrollspy({ target: '', offset: 50});
 
 $('.dropdown-item').click(function(event){
     event.preventDefault();

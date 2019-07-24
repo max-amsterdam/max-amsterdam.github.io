@@ -1,5 +1,6 @@
 #dropdown {
     display:none;
+    background-color: #1B2121;
 }
 
 @media only screen and (max-width: 768px){
@@ -10,10 +11,12 @@
 
 #sidebar {
     background-color: white;
-    max-width: 400px;
+    max-width: 350px;
+    padding-top: 30vh;
 }
+
 #main-content {
-    background-color:tan;
+    background-color:#F4EDE6;
 }
 
 .videoWrapper{
@@ -44,18 +47,39 @@ body {
 #profile-pic{
     max-height: 100%; 
     width:auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 [id$="-container"]{
     height:100vh;
 }
 
-.nav > a.active {
-    background-color: darkgray;
+#home-container {
+    padding-top: 60px;
 }
-.navbar-toggler-icon {
-    margin-left:6px;
-    background-color:lightgray;
+.sidebar > a.active {
+    color: black;
+}
+.sidebar > a:hover {
+    color: black;
+}
+.sidebar > a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 20px;
+    padding: 10px;
+}
+.dropdown-menu > a.active{
+    background-color: #262626; 
+}
+#max-amsterdam-sidebar {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.fa-bars {
+    margin: 10px;
 }
 
 .project-image {
@@ -65,3 +89,19 @@ body {
     max-width: 400px;
     max-height: 400px;
 }
+
+.social-icon {
+    font-size: 40px;
+    color: white;
+}
+#social-icon-row {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    padding-bottom: 20px;
+}
+#sidebar-container{
+    height: 100vh;
+}
+
+
