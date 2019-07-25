@@ -1,173 +1,112 @@
 <!doctype html>
 <html lang="en">
-    <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<title>Max Amsterdam</title>
-    </head>
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
-	<div class="container-fluid">
-	    <div class="row">
-		<div class="col sidebar d-none d-md-block" id="sidebar">
-		    <div id="sidebar-container" class="container-fluid
-			sticky-top">
-			<div class="row">
-			    <nav id="navbar" class="mx-auto text-center sidebar">
-				<a id="max-amsterdam-sidebar" class="nav-item nav-link" onclick='goToByScroll("home-container")'
-							      href="#home-container">Max Amsterdam</a>	
-				<hr style="border:1px solid gray;">
-				<a class="nav-item nav-link" href="#about-container"
-							     onclick='goToByScroll("about-container")'>About</a>	
-				<a class="nav-item nav-link" href="#projects-container"
-							     onclick='goToByScroll("projects-container")'>Projects</a>	
-				<a class="nav-item nav-link" href="#rowing-container"
-							     onclick='goToByScroll("rowing-container")'>Rowing</a>	
-				<a class="nav-item nav-link" href="#contact-container"
-							     onclick='goToByScroll("contact-container")'>Contact</a>	
-			    </nav>
-			</div>
-			<div id="social-icon-row" class="row mt-auto">
-			    <div class= "col text-center">
-				<a href="">
-				    <i class="fab fa-linkedin social-icon"></i>
-				</a>
-			    </div>
-			    <div class= "col text-center">
-				<a href = "">
-				    <i class="fab fa-facebook-square social-icon"></i>
-				</a>
-			    </div>
-			    <div class= "col text-center">
-				<a href="">
-				    <i class="far fa-file-alt social-icon"></i>
-				</a>
-			    </div>
-			</div>
-		    </div>
-		    </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Max Amsterdam</title>
+</head>
 
-		<div class="col" id="main-content">
-		    <nav class="fixed-top" id="dropdown">
-			<a class="nav-item dropdown" href = "#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    <i class="fas fa-lg fa-bars"></i>
-			</a>	
-			<nav id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
-			    <a class="dropdown-item" href="#home-container"
-						     onclick='goToByScroll("home-container")'>Max Amsterdam</a>	
-			    <a class="dropdown-item" href="#about-container" 
-						     onclick='goToByScroll("about-container")'>About</a>	
-			    <a class="dropdown-item active" href="#projects-container"
-						     onclick='goToByScroll("projects-container")'>Projects</a>	
-			    <a class="dropdown-item" href="#rowing-container"
-						     onclick='goToByScroll("rowing-container")'>Rowing</a>	
-			    <a class="dropdown-item" href="#contact-container"
-						     onclick='goToByScroll("contact-container")'>Contact</a>	
-			</nav>
-		    </nav>
-		    <div id="home-container" class="container-fluid justify-content-center
-		    text-center fill">
-			<div class="row">
-			    <div class="col-8">
-				<img id="profile-pic" class="img-fluid rounded" src="photos/profile_pic.jpg" alt="">
-			    </div>
-			    <div class="col my-auto">
-				<h1 id="home-header">
-				    Hi, I'm Max	
-				</h1>
-			    </div>
-			</div>
-		    </div>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li>
+                        <a>About Me</a>
+                    </li>
+                    <li>
+                        <a>Experience</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-		    <div id="about-container" class="container-fluid fill">
-			<div>
-			    <h3 id="about-header">
-				About
-			    </h3>
-			    <p>
-			    Lorem ipsum dolor sit amet, vis sensibus salutandi ex, amet saperet graecis te vim. Amet admodum scriptorem est ad, efficiantur contentiones pro an. Corpora constituto est in, clita ceteros eos ad. Bonorum ponderum mei ne, vivendo inciderint id duo. Ne est wisi nulla fastidii, mundi laoreet eligendi eum id, falli conclusionemque at vel.
-			    </p>
-			</div>
-		    </div>
+    <div id="content">
+        <div class="container-fluid page-container" id="landing-page-container">
+            <div class="row page" id="landing-page">
+                <div class="col vert-center-col" id="name">
+                    <h1>Max Amsterdam</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-container" id="details-page-container">
+            <div class="row page" id="details-page">
+                <div class="col-sm-6 vert-center-col">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas urna mi, at ornare turpis convallis eget. Cras ac dolor nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis nibh, maximus sit amet scelerisque non, semper in felis. Mauris eu ultricies enim, nec sollicitudin lectus. Nunc eu venenatis augue. Vivamus luctus mi et maximus semper.
+                </div>
+                <div class="col-sm-6 vert-center-col">
+                    About me text
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-container" id="experience-page-container">
+            <div class="row page" id="experience-page">
+                <div class="col-sm-6 vert-center-col">
+                    Places I've worked for
+                </div>
+                <div class="col-sm-6 vert-center-col">
+                    Placed
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-container" id="details-page-container">
+            <div class="row page" id="details-page">
+                <div class="col-sm-6 vert-center-col">
+                    My Projects
+                </div>
+                <div class="col-sm-6 vert-center-col">
+                    Project
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-container" id="details-page-container">
+            <div class="row page" id="details-page">
+                <div class="col-sm-6 vert-center-col">
+                    rowing stuff
+                </div>
+                <div class="col-sm-6 vert-center-col">
+                    rowing
+                </div>
+            </div>
+        </div>
 
-		    <div id="projects-container" class="container fill">
-			<div>
-			    <h2 id="projects-header">
-				Projects	
-			    </h2>
-			    <div class="row">
-				<div id="proj1" class="col justify-content-center
-				text-center">
-				    <h3>
-					C150Data.com 
-				    </h3> 
-				    <img class="img-fluid rounded" src="photos/gears.jpg" alt="">
-				    <p>
-				    I am currently working on creating a website for my
-				    rowing team that ranks the rowers on the team in real
-				    time using the TrainingPeaks API. Stay tuned for
-				    updates.
-				    </p>
-				</div>
-				<div id="proj2" class="col justify-content-center
-				text-center">
-				    <h3>
-					Personal Website 
-				    </h3> 
-				    <img class="img-fluid rounded"
-					 src="https://www.telegraph.co.uk/content/dam/technology/2017/08/03/Internet2_trans_NvBQzQNjv4BqJRZdqtQCcB0-hjTaQxsqmtMZZIw9jvU_z2DJKltQ1FE.jpg?imwidth=450" alt="">
 
-				    <p> 
-				    You're using one of my projects right now! Check out the
-				    source code <a
-						    href="https://github.com/max-amsterdam/max-amsterdam.github.io"
-						    target="_blank">here</a>.
-				    </p>
-				</div>
-			    </div>
-			</div>
-		    </div>
+    </div>
 
-		    <div id="rowing-container" class="container justify-content-center
-		    text-center fill">
-			<div>
-			    <h3 id="rowing-header">
-				Rowing	
-			    </h3>
-			    <div class="videoWrapper" id="videos">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/bVeNcb4dKZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			    </div>
-			</div>
-		    </div>
 
-		    <div id="contact-container" class="container-fluid fill">
-			<div>
-			    <h3 id="contact-header">
-				Contact	
-			    </h3>
-			    <p>
-			    Email: maxwell.amsterdam@columbia.edu
-			    Phone: 610-312-9011
-			    </p>
-			</div>
-		    </div>
-		</div>
-	    </div>
-	</div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
 
-	 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-		 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		 crossorigin="anonymous"></script>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	 <script
-	     src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	     crossorigin="anonymous"></script>
-	 <script src="script.js"></script>
-    </body>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
 
 </html>
