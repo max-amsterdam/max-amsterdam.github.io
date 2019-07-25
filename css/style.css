@@ -19,7 +19,7 @@ body {
 /* Header */
 
 #header {
-    padding: 30px 0;
+    padding: 20px 0;
     height: 92px;
     position: fixed;
     left: 0;
@@ -33,6 +33,37 @@ body {
     padding: 20px 0;
     height: 71px;
     transition: all 0.5s;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #b9d9eb;
+  color: #fff;
 }
 
 /* Nav */
