@@ -3,6 +3,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -197,6 +198,14 @@ body {
 .vert-center-col {
     display: flex;
     align-items: center;
+}
+
+#headshot-pic {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: auto;
+    height: 40%;
 }
 
 #details-page-container {
