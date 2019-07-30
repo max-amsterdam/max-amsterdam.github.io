@@ -10,9 +10,15 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Local Javascript -->
     <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/e2cee4a830.js"></script>
     <title>Max Amsterdam</title>
 </head>
 
@@ -41,32 +47,71 @@
     <div id="content">
         <div class="container-fluid page-container" id="landing-page-container">
             <div class="row page" id="landing-page">
-                <div class="col vert-center-col" id="name">
-                    <h1>Max Amsterdam</h1>
+                <div class="col vert-center-col">
+                    <div id="name-section">
+                        <h1 id="name">Max Amsterdam</h1>
+                        <h2>Student and Programmer</h2>
+                    </div>
                 </div>
-                <img src="photos/profile_pic.jpeg" id="headshot-pic">
+                <img src="photos/profile_pic.png" id="headshot-pic">
             </div>
         </div>
         <div class="container-fluid page-container" id="details-page-container">
             <div class="row page" id="details-page">
-                <div class="col-sm-6 vert-center-col">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas urna mi, at ornare turpis
-                    convallis eget. Cras ac dolor nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    felis nibh, maximus sit amet scelerisque non, semper in felis. Mauris eu ultricies enim, nec
-                    sollicitudin lectus. Nunc eu venenatis augue. Vivamus luctus mi et maximus semper.
+                <div class="col-sm-6 vert-center-col" align="center">
+                    <div class="container" id="links-container">
+                        <div class="row links-row">
+                            <div class="col">
+                                <a href="https://www.facebook.com/maxamsterdam2" target="_blank">
+                                    <i class="fab fa-facebook fa-7x"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.github.com/max-amsterdam" target="_blank">
+                                    <i class="fab fa-github fa-7x"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row links-row">
+                            <div class="col">
+                                <a href="https://www.linkedin.com/in/max-amsterdam" target="_blank">
+                                    <i class="fab fa-linkedin-in fa-7x"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://drive.google.com/file/d/1S5xSSMoplywyHRdmpuGCoE-s_iyz7SU_/view?usp=sharing" target="_blank">
+                                    <i class="fas fa-file-alt fa-7x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 vert-center-col">
-                    About me text
+                <div class="col-sm-6 vert-center-col" id="details-text-col">
+                    <p>
+                        My name is Max Amsterdam. I am a student, programmer, and rower. This is my website. Explore it to
+                        find out more about me. Or, if you're looking for other information about me, check out these links
+                        my other stuff. 
+                        <br>
+                        <br>
+                        Here's some more stuff about me. These are the things. This is very important stuff about me
+                    </p>
                 </div>
             </div>
         </div>
         <div class="container-fluid page-container" id="experience-page-container">
-            <div class="row page" id="experience-page">
-                <div class="col-sm-6 vert-center-col">
-                    Places I've worked for
+            <div class="page">
+                <div class="row" id="experience-header">
+                    <div class="col vert-center-col">
+                        <h1>Places I've Worked</h1>
+                    </div>
                 </div>
-                <div class="col-sm-6 vert-center-col">
-                    Placed
+                <div class="row" id="experience-content" align="center">
+                    <div class="col-sm">
+                        <img class="experience-logo" src="photos/clutch_logo.svg">
+                    </div>
+                    <div class="col-sm">
+                        <img class="experience-logo" src="photos/cardconnect_logo.png">
+                    </div>
                 </div>
             </div>
         </div>
