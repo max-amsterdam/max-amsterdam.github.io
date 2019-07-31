@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-image: radial-gradient(#000000, #212121);
+    background-image: radial-gradient(#000000, #111111);
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     min-height: 100%;
@@ -247,6 +247,10 @@ body {
 
 /* Experience Page */
 
+#experience-page-container {
+    background-color: lightgray;
+    color: black;
+}
 
 #experience-header {
     height: 30%;
@@ -265,7 +269,20 @@ body {
     padding-left: 15%;
 }
 
+.experience-logo-container {
+    height: 125px;
+    display: flex;
+    align-items: center;
+}
+
 .experience-logo {
-    width: 40%;
+    width: 50%;
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.experience-text {
+    margin-top: 20px;
+    font-size: 20px;
 }
