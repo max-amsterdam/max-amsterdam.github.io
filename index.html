@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn"/>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -25,6 +26,11 @@
 <body>
     <header id="header">
         <div class="container-fluid">
+            <div id="nav-name-container">
+                <a href="#landing-page-container">
+                    <h2 id="nav-name">Max Amsterdam</h2>
+                </a>
+            </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li>
@@ -47,10 +53,10 @@
     <div id="content">
         <div class="container-fluid page-container" id="landing-page-container">
             <div class="row page" id="landing-page">
-                <div class="col vert-center-col">
+                <div class="col vert-center-col" id="landing-page-col">
                     <div id="name-section">
                         <h1 id="name">Max Amsterdam</h1>
-                        <h2>Student and Programmer</h2>
+                        <h2>Programmer/Student/Rower</h2>
                     </div>
                 </div>
                 <img src="photos/profile_pic.png" id="headshot-pic">
@@ -58,7 +64,7 @@
         </div>
         <div class="container-fluid page-container" id="details-page-container">
             <div class="row page" id="details-page">
-                <div class="col-sm-6 vert-center-col" align="center">
+                <div class="col-md-6 vert-center-col" align="center">
                     <div class="container" id="links-container">
                         <div class="row links-row">
                             <div class="col">
@@ -79,7 +85,8 @@
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="https://drive.google.com/file/d/1S5xSSMoplywyHRdmpuGCoE-s_iyz7SU_/view?usp=sharing" target="_blank">
+                                <a href="https://drive.google.com/file/d/1S5xSSMoplywyHRdmpuGCoE-s_iyz7SU_/view?usp=sharing"
+                                    target="_blank">
                                     <i class="fas fa-file-alt fa-5x"></i>
                                 </a>
                             </div>
@@ -98,11 +105,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 vert-center-col" id="details-text-col">
+                <div class="col-md-6 vert-center-col" id="details-text-col">
                     <p>
-                        My name is Max Amsterdam. I am a student, programmer, and rower. This is my website. Explore it to
-                        find out more about me. Or, if you're looking for other information about me, check out these links
-                        my other stuff. 
+                        My name is Max Amsterdam. I am a student, programmer, and rower. This is my website. Explore it
+                        to
+                        find out more about me. Or, if you're looking for other information about me, check out these
+                        links
+                        my other stuff.
                         <br>
                         <br>
                         Here's some more stuff about me. These are the things. This is very important stuff about me
@@ -112,40 +121,54 @@
         </div>
         <div class="container-fluid page-container" id="experience-page-container">
             <div class="page">
-                <div class="row" id="experience-header">
+                <div class="row page-header-row" id="experience-header">
                     <div class="col vert-center-col">
                         <h1>Places I've Worked</h1>
                     </div>
                 </div>
                 <div class="row" id="experience-content" align="center">
-                    <div class="col-sm">
+                    <div class="col-lg-6">
                         <div class="experience-logo-container">
                             <img class="experience-logo" src="photos/clutch_logo.svg">
                         </div>
                         <p class="experience-text">
-                            My first internship ever was at Clutch, a small technology company that focuses on supplying businesses with a data-drive marketing platform. I worked for Clutch in the summer of 2018 as a Software Engineering Intern. I mainly worked on X while at Clutch, which helped accomplish X, Y, and Z. This feature used A and B technologies.
+                            My first internship ever was at Clutch, a small technology company that focuses on supplying
+                            businesses with a data-drive marketing platform. I worked for Clutch in the summer of 2018
+                            as a Software Engineering Intern. I mainly worked on X while at Clutch, which helped
+                            accomplish X, Y, and Z. This feature used A and B technologies.
                         </p>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-lg-6">
                         <div class="experience-logo-container">
                             <img class="experience-logo" src="photos/cardconnect_logo.png">
                         </div>
                         <p class="experience-text">
-                            In the summer of 2019, I worked for a medium sized technology company called CardConnect. CardConnect builds payment processing software that helps make credit card payments secure and reliable. At CardConnect, I worked as a Software Engineering Intern and worked on X, Y, and Z. I worked with A, B, and C technologies while doing it.
+                            In the summer of 2019, I worked for a medium sized technology company called CardConnect.
+                            CardConnect builds payment processing software that helps make credit card payments secure
+                            and reliable. At CardConnect, I worked as a Software Engineering Intern and worked on X, Y,
+                            and Z. I worked with A, B, and C technologies while doing it.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid page-container" id="projects-page-container">
-            <div class="row page" id="projects-page">
-                <div class="col-sm-6 vert-center-col">
-                    My Projects
-                </div>
-                <div class="col-sm-6 vert-center-col">
-                    Project
+            <div class="row page-header-row" id="projects-header">
+                <div class="col vert-center-col">
+                    <h1>Personal Projects</h1>
                 </div>
             </div>
+            <div class="row" id="projects-content">
+                <div class="col-sm-6 vert-center-col" align="center" id="projects-text-col">
+                    <p>
+                    </p>
+                </div>
+                <div class="col-sm-6 vert-center-col" id="projects-images-col">
+                    <!-- Image of C150data.com -->
+                    <!-- Another image of c150data.com -->
+                </div>
+            </div>
+
         </div>
         <div class="container-fluid page-container" id="rowing-page-container">
             <div class="row page" id="rowing-page">
