@@ -9,16 +9,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/rowing.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn" />
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <!-- Local Javascript -->
     <script type="text/javascript" src="js/script.js"></script>
 
@@ -35,20 +38,24 @@
                     <h2>Max Amsterdam</h2>
                 </a>
             </div>
+            <button id="mobile-nav-toggle" type="button"><i class="fa fa-bars"></i></button>
+            <div id="mobile-overlay"></div>
             <nav class="nav-menu-container">
-                <ul class="nav-menu">
+                <ul id="nav-menu">
                     <li>
                         <a href="#details-page-container">About Me</a>
                     </li>
-                    <li>
-                        <a href="#projects-page-container">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#experience-page-container">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#rowing-page-container">Rowing</a>
-                    </li>
+                    <div style="display: none;">
+                        <li>
+                            <a href="#projects-page-container">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience-page-container">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#rowing-page-container">Rowing</a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -57,13 +64,15 @@
     <div id="content">
         <div class="container-fluid page-container" id="landing-page-container">
             <div class="row page">
-                <div class="col vert-center-col" id="landing-page-col">
+                <div class="col-lg-4 col-xl-5 name-col">
                     <div class="name-section">
                         <h1>Max Amsterdam</h1>
                         <h2>Programmer/Student/Rower</h2>
                     </div>
                 </div>
-                <img src="photos/profile_pic.png" class="headshot-right">
+                <div class="col-lg-8 col-xl-7 profile-col">
+                    <img src="photos/profile_pic.png" class="headshot">
+                </div>
             </div>
         </div>
         <div class="container-fluid page-container" id="details-page-container">
@@ -73,52 +82,75 @@
                         <div class="row links-row">
                             <div class="col">
                                 <a href="mailto: maxwell.amsterdam@columbia.edu">
-                                    <i class="fas fa-paper-plane fa-5x"></i>
+                                    <i style="color: #ACE7FF" class="fas fa-paper-plane fa-5x"></i>
                                 </a>
                             </div>
                             <div class="col">
                                 <a href="https://www.github.com/max-amsterdam" target="_blank">
-                                    <i class="fab fa-github fa-5x"></i>
+                                    <i style="color: #FFABAB" class="fab fa-github fa-5x"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="row links-row">
                             <div class="col">
                                 <a href="https://www.linkedin.com/in/max-amsterdam" target="_blank">
-                                    <i class="fab fa-linkedin-in fa-5x"></i>
+                                    <i style="color: #BFFCC6" class="fab fa-linkedin-in fa-5x"></i>
                                 </a>
                             </div>
                             <div class="col">
                                 <a href="https://docs.google.com/document/d/1lMPi3fQ-vF5ha1b271PwYo6Ca8rjbTX0tKSjAwtWvG0/edit?usp=sharing"
                                     target="_blank">
-                                    <i class="fas fa-file-alt fa-5x"></i>
+                                    <i style="color: #FFCCF9" class="fas fa-file-alt fa-5x"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="row links-row">
                             <div class="col">
                                 <a href="tel: 610-312-9011">
-                                    <i class="fas fa-phone fa-5x"></i>
+                                    <i style="color: #B28DFF" class="fas fa-phone fa-5x"></i>
                                 </a>
                             </div>
                             <div class="col">
                                 <a href="https://www.facebook.com/maxamsterdam2" target="_blank">
-                                    <i class="fab fa-facebook fa-5x"></i>
+                                    <i style="color: #FDFD97" class="fab fa-facebook fa-5x"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 vert-center-col" id="details-text-col">
-                    <p>
-                        My name is Max Amsterdam. I am a student, programmer, and rower. This is my website. Explore it
-                        to
-                        find out more about me. Or, if you're looking for other information about me, check out these
-                        links
-                        my other stuff.
+                <div class="col-md-6" id="details-text-col">
+                    <h1>Hi, I'm Max</h1>
+                    <div id="details-content">
+                        <h4>
+                            I'm from the Philadelphia area and currently live in New York City. I study Computer Science
+                            at Columbia University, and plan to graduate in the Spring of 2021.
+                        </h4>
                         <br>
+                        <p>
+                            When I was introduced to programming in high school, I immediately fell in love. I now know
+                            that I want to pursue software development as a career.
+                            I'm especially interested in web development, with experience working on web applications in
+                            <a href="#experience-page-container">professional environments</a> and building <a
+                                href="#projects-page-container">applications of my own</a> (one of which you're using
+                            right now!)
+                        </p>
                         <br>
-                        Here's some more stuff about me. These are the things. This is very important stuff about me
+                        <p>
+                            I started rowing seven years ago and haven't stopped since. I'm currently a member of the
+                            Columbia Lightweight Rowing Team, an organization that has gifted me with gold medals,
+                            lifelong friends, and a new perspective on hard work.
+                            Check out my rowing gallery <a href="#rowing-page-container">here</a>.
+                        </p>
+                        <br>
+                        <p>
+                            In my free time I enjoy playing ping pong, tinkering with mechanical keyboards, and cooking
+                            plant-based meals.
+                        </p>
+                        <br>
+                        <p>
+                            Want to know more about me? I highly encourage you to explore my social media or contact me personally!
+                        </p>
+                    </div>
                     </p>
                 </div>
             </div>

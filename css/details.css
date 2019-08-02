@@ -1,10 +1,12 @@
 #details-page-container {
     background-color: whitesmoke;
     color: black;
+    min-height: 100vh;
 }
 
 /* Social links */
 #links-container {
+    order: 2;
     font-size: 100%;
 }
 
@@ -16,7 +18,23 @@
     color: inherit;
 }
 
+.links-row i {
+    font-size: 175px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 /* Details text */
 #details-text-col {
+    margin-top: 100px;
     font-size: 20px;
+    order: 1;
+}
+
+#details-text-col h1{
+    font-size: 60px;
+}
+
+#details-content {
+    padding-top: 20px;
 }

@@ -8,6 +8,7 @@ body {
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -21,8 +22,7 @@ body {
 /* General Page Classes */
 .page-container {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: auto;
 }
 
 .page {
@@ -52,7 +52,6 @@ body {
     align-items: center;
 }
 
-
 /* Header */
 #header {
     padding: 20px 0;
@@ -71,58 +70,12 @@ body {
     transition: all 0.5s;
 }
 
-
-/* Navigation */
-.nav-name-container {
-    display: none;
-    float: left;
-    position: relative;
-}
-
-.nav-name-container a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.nav-menu-container {
-    float: right;
-    margin: 0;
-}
-
-.nav-menu,
-.nav-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.nav-menu li {
-    position: relative;
-    white-space: nowrap;
-    float: left;
-    margin-left: 10px;
-}
-
-.nav-menu a {
-    padding: 0 8px 10px 8px;
-    text-decoration: none;
-    display: inline-block;
-    color: whitesmoke;
-    font-size: 18px;
-    outline: none;
-}
-
-.nav-menu li a:hover {
-    color: lightblue;
-}
-
-
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
     display: none;
     background: rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: whitesmoke;
     padding: 6px 12px 9px 12px;
     font-size: 16px;
     border-radius: 2px;

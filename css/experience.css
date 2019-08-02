@@ -1,6 +1,7 @@
 /* Experience Page */
 #experience-page-container {
     background-color: whitesmoke;
+    display: none;
     color: black;
 }
 

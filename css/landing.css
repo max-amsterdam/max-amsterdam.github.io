@@ -1,21 +1,23 @@
+#landing-page-container {
+    height: 100vh;
+}
+
 /* Headshot */
-.headshot-right {
-    position: absolute;
-    opacity: .9;
-    bottom: 0px;
-    right: 0px;
-    max-width: 55%;
-    max-height: 90%;
-}
-
-.headshot-center {
-    /* TODO  */
-}
-
 /* Name and subheader */
+.headshot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    max-height: 80%;
+}
+
 .name-section {
-    margin-left: 10%;
-    width: 50%;
+    margin-top: 300px;
+    margin-left: 75px;
 }
 
 .name-section h1 {
@@ -25,3 +27,36 @@
 .name-section h2 {
     font-size: 30px;
 }
+
+@media (max-width: 991px){
+    .name-section{
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .name-section *{
+        text-align: center;
+    }
+    .name-section h1{
+        font-size: 60px;
+    }
+    .name-section h2{
+        font-size: 22px;
+    }
+    .name-col{
+        height: 30%;
+    }
+    .profile-col{
+        height: 70%;
+    }
+    .headshot{
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .name-section{
+        margin-top: 200px;
+    }
+}
+

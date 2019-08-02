@@ -1,6 +1,7 @@
 #projects-page-container {
     background-color: rgb(201, 233, 244);
     color: black;
+    display: none;
 }
 
 #projects-header {

@@ -1,45 +1,84 @@
 jQuery(document).ready(function ($) {
 
-    // Header change and back to top button 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > $(window).height()*.75) {
-            $('.nav-name-container').fadeIn("slow");
-            $('.back-to-top').fadeIn('slow');
-            $('#header').addClass('header-fixed');
-        } else {
-            $('.nav-name-container').fadeOut("fast");
-            $('.back-to-top').fadeOut('slow');
-            $('#header').removeClass('header-fixed');
-        }
+    updateNavigation();
+
+    $(window).scroll(function() {
+        scrollNavigation();
     });
+
+    $(document).click(function(e){
+        escapeMobileNav(e);
+    });
+
     $('.back-to-top').click(function () {
-        window.scroll({
-            top: 0,
-            left:0,
-            behavior: 'smooth'
-        });
+        backToTopClick();
     });
 
-    // Landing page profile picture and name
-    if($(window).width() < 1250 || $(window).height() > 975){
-        $("#headshot-pic").css({
-            'left': '0',
-            'right': '0',
-            'margin-left': 'auto',
-            'margin-right': 'auto',
-            'max-height': '75%'
-        });
-        $("landing-page-col").removeClass("vert-center-col");
-    }
+    $('#mobile-nav-toggle').click(function(){
+        mobileNavToggleClick();
+    })
 
-
-    function handleMobile() {
-        var windowSize = $(window).width();
-        // Mobile Navigation
-        if (windowSize < 768) {
-            // change header to a mobile header
-        }
-    }
-    handleMobile();
+    // Mobile Navigation
+    $(window).on('resize', function () {
+        updateNavigation();
+    });
 
 });
+
+function updateNavigation() {
+    var width = $(window).width();
+    if (width > 768) {
+        $("#mobile-nav-toggle").hide();
+        $("#nav-menu").attr({
+            'class': 'nav-menu'
+        })
+        $("#nav-menu").css({
+            display: ''
+        })
+    } else {
+        // Mobile view
+        $("#mobile-nav-toggle").show();
+        $("#nav-menu").attr({
+            'class': 'nav-menu-mobile'
+        });
+    }
+}
+
+function scrollNavigation() {
+    if ($(this).scrollTop() > $(window).height() * .75) {
+        $('.nav-name-container').fadeIn("slow");
+        $('.back-to-top').fadeIn('slow');
+        $('#header').addClass('header-fixed');
+    } else {
+        $('.nav-name-container').fadeOut("fast");
+        $('.back-to-top').fadeOut('slow');
+        $('#header').removeClass('header-fixed');
+    }
+}
+
+function backToTopClick() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
+function mobileNavToggleClick() {
+    $('body').toggleClass('mobile-nav-active');
+    $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+    $('#mobile-overlay').toggle();
+    $('#nav-menu').toggle();
+}
+
+function escapeMobileNav(e){
+    var container = $("#mobile-nav, #mobile-nav-toggle");
+    if(!container.is(e.target) && container.has(e.target).length === 0){
+        if($('body').hasClass('mobile-nav-active')){
+            $('body').removeClass('mobile-nav-active');
+            $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+            $('#mobile-overlay').fadeOut();
+            $('#nav-menu').toggle();
+        }
+    }
+}
