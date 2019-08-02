@@ -1,12 +1,12 @@
 #details-page-container {
     background-color: whitesmoke;
     color: black;
-    min-height: 100vh;
+    height: 100vh; 
 }
 
 /* Social links */
 #links-container {
-    order: 2;
+    margin-top: 100px;
     font-size: 100%;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .links-row i {
-    font-size: 175px;
+    font-size: 130px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -27,14 +27,56 @@
 /* Details text */
 #details-text-col {
     margin-top: 100px;
-    font-size: 20px;
-    order: 1;
+    font-size: 18px;
 }
 
-#details-text-col h1{
+#details-text-col h1 {
     font-size: 60px;
 }
 
+#details-text-col p, #details-text-col h4 {
+    margin-bottom: 20px;
+}
+
 #details-content {
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 1300px) {
+    .links-row i {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    #details-text-col, #links-container {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .links-row{
+        padding: 10px;
+    }
+
+    .links-row i {
+        font-size: 40px;
+    }
+
+    #details-text-col {
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    #links-container {
+        margin-top: 20px;
+    }
+
+    #details-text-col h1 {
+        font-size: 40px;
+    }
+
+    #details-text-col h4 {
+        font-size: 20px;
+    }
 }

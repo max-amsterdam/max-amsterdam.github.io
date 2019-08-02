@@ -15,7 +15,7 @@ body {
     background-image: radial-gradient(#000000, #111111);
     color: whitesmoke;
     font-family: Vollkorn;
-    min-height: 100%;
+    height: 100%;
 }
 
 
@@ -68,6 +68,26 @@ body {
     padding: 20px 0;
     height: 71px;
     transition: all 0.5s;
+}
+
+/* Learn More Button */
+.btn {
+    -webkit-appearance: button;
+    padding: 10px;
+    margin-top: 10px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.btn:hover{
+    border-color: lightblue;
+    color: lightblue;
 }
 
 /* Back to Top Button */
