@@ -1,0 +1,143 @@
+/* Document */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: radial-gradient(#000000, #111111);
+    color: whitesmoke;
+    font-family: Vollkorn;
+    min-height: 100%;
+}
+
+
+/* General Page Classes */
+.page-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.page {
+    height: 100%;
+}
+
+.page-header-row {
+    padding-top: 71px;
+    height: 20%;
+    width: 100%;
+}
+
+.page-content-row {
+    height: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.page-header-row h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.vert-center-col {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Header */
+#header {
+    padding: 20px 0;
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 997;
+}
+
+#header.header-fixed {
+    background: rgba(52, 59, 64, .95);
+    padding: 20px 0;
+    height: 71px;
+    transition: all 0.5s;
+}
+
+
+/* Navigation */
+.nav-name-container {
+    display: none;
+    float: left;
+    position: relative;
+}
+
+.nav-name-container a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-menu-container {
+    float: right;
+    margin: 0;
+}
+
+.nav-menu,
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+    margin-left: 10px;
+}
+
+.nav-menu a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 18px;
+    outline: none;
+}
+
+.nav-menu li a:hover {
+    color: lightblue;
+}
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+}
+
+.back-to-top:focus {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+.back-to-top:hover {
+    background: #b9d9eb;
+    color: #fff;
+}

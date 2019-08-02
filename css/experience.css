@@ -1,0 +1,23 @@
+/* Experience Page */
+#experience-page-container {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.experience-logo-container {
+    height: 125px;
+    display: flex;
+    align-items: center;
+}
+
+.experience-logo {
+    width: 200px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.experience-text {
+    margin-top: 20px;
+    font-size: 20px;
+}

@@ -1,12 +1,13 @@
 jQuery(document).ready(function ($) {
-    // Header fixed and Back to top button
+
+    // Header change and back to top button 
     $(window).scroll(function () {
         if ($(this).scrollTop() > $(window).height()*.75) {
-            $('#nav-name-container').fadeIn("slow");
+            $('.nav-name-container').fadeIn("slow");
             $('.back-to-top').fadeIn('slow');
             $('#header').addClass('header-fixed');
         } else {
-            $('#nav-name-container').fadeOut("fast");
+            $('.nav-name-container').fadeOut("fast");
             $('.back-to-top').fadeOut('slow');
             $('#header').removeClass('header-fixed');
         }
@@ -19,8 +20,8 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    // Landing page profile picture and name
     if($(window).width() < 1250 || $(window).height() > 975){
-        // Center profile picture and move name cetnered and top position
         $("#headshot-pic").css({
             'left': '0',
             'right': '0',

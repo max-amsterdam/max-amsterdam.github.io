@@ -1,0 +1,27 @@
+/* Headshot */
+.headshot-right {
+    position: absolute;
+    opacity: .9;
+    bottom: 0px;
+    right: 0px;
+    max-width: 55%;
+    max-height: 90%;
+}
+
+.headshot-center {
+    /* TODO  */
+}
+
+/* Name and subheader */
+.name-section {
+    margin-left: 10%;
+    width: 50%;
+}
+
+.name-section h1 {
+    font-size: 80px;
+}
+
+.name-section h2 {
+    font-size: 30px;
+}

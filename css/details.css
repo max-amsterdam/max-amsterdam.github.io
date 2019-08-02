@@ -1,0 +1,22 @@
+#details-page-container {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Social links */
+#links-container {
+    font-size: 100%;
+}
+
+.links-row {
+    padding: 30px;
+}
+
+.links-row a {
+    color: inherit;
+}
+
+/* Details text */
+#details-text-col {
+    font-size: 20px;
+}

@@ -8,8 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn" />
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -26,21 +30,21 @@
 <body>
     <header id="header">
         <div class="container-fluid">
-            <div id="nav-name-container">
+            <div class="nav-name-container">
                 <a href="#landing-page-container">
-                    <h2 id="nav-name">Max Amsterdam</h2>
+                    <h2>Max Amsterdam</h2>
                 </a>
             </div>
-            <nav id="nav-menu-container">
+            <nav class="nav-menu-container">
                 <ul class="nav-menu">
                     <li>
                         <a href="#details-page-container">About Me</a>
                     </li>
                     <li>
-                        <a href="#experience-page-container">Projects</a>
+                        <a href="#projects-page-container">Projects</a>
                     </li>
                     <li>
-                        <a href="#projects-page-container">Experience</a>
+                        <a href="#experience-page-container">Experience</a>
                     </li>
                     <li>
                         <a href="#rowing-page-container">Rowing</a>
@@ -52,18 +56,18 @@
 
     <div id="content">
         <div class="container-fluid page-container" id="landing-page-container">
-            <div class="row page" id="landing-page">
+            <div class="row page">
                 <div class="col vert-center-col" id="landing-page-col">
-                    <div id="name-section">
-                        <h1 id="name">Max Amsterdam</h1>
+                    <div class="name-section">
+                        <h1>Max Amsterdam</h1>
                         <h2>Programmer/Student/Rower</h2>
                     </div>
                 </div>
-                <img src="photos/profile_pic.png" id="headshot-pic">
+                <img src="photos/profile_pic.png" class="headshot-right">
             </div>
         </div>
         <div class="container-fluid page-container" id="details-page-container">
-            <div class="row page" id="details-page">
+            <div class="row page">
                 <div class="col-md-6 vert-center-col" align="center">
                     <div class="container" id="links-container">
                         <div class="row links-row">
@@ -85,7 +89,7 @@
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="https://drive.google.com/file/d/1S5xSSMoplywyHRdmpuGCoE-s_iyz7SU_/view?usp=sharing"
+                                <a href="https://docs.google.com/document/d/1lMPi3fQ-vF5ha1b271PwYo6Ca8rjbTX0tKSjAwtWvG0/edit?usp=sharing"
                                     target="_blank">
                                     <i class="fas fa-file-alt fa-5x"></i>
                                 </a>
@@ -119,14 +123,40 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid page-container" id="projects-page-container">
+            <div class="row page-header-row" id="projects-header">
+                <div class="col vert-center-col">
+                    <h1>Personal Projects</h1>
+                </div>
+            </div>
+            <div class="row page-content-row" id="projects-content">
+                <div class="col-sm-6 vert-center-col" align="center" id="projects-text-col">
+                    <p>
+                        I am the co-founder and creator of c150data.com, a website designed for the Columbia Lightweight
+                        Rowing team.
+                        This projects mission is xxxxxxxxxxxxxxxxx.
+                        I discovered the problem of xxxxxxxxxxxxxxx, and developed a solution of xxxxx.
+                        Check out here for an outline of the goals and outlook for the project.
+                        Check out here for the Code repository.
+                        Visit the website here!
+                    </p>
+                </div>
+                <div class="col-sm-6 vert-center-col" id="projects-images-col" align="center">
+                    <p>IMAGE HERE</p>
+                    <p>IMAGE 2 HERE</p>
+                    <!-- Another image of c150data.com -->
+                </div>
+            </div>
+
+        </div>
         <div class="container-fluid page-container" id="experience-page-container">
             <div class="page">
-                <div class="row page-header-row" id="experience-header">
+                <div class="row page-header-row">
                     <div class="col vert-center-col">
                         <h1>Places I've Worked</h1>
                     </div>
                 </div>
-                <div class="row" id="experience-content" align="center">
+                <div class="row page-content-row" align="center">
                     <div class="col-lg-6">
                         <div class="experience-logo-container">
                             <img class="experience-logo" src="photos/clutch_logo.svg">
@@ -152,24 +182,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid page-container" id="projects-page-container">
-            <div class="row page-header-row" id="projects-header">
-                <div class="col vert-center-col">
-                    <h1>Personal Projects</h1>
-                </div>
-            </div>
-            <div class="row" id="projects-content">
-                <div class="col-sm-6 vert-center-col" align="center" id="projects-text-col">
-                    <p>
-                    </p>
-                </div>
-                <div class="col-sm-6 vert-center-col" id="projects-images-col">
-                    <!-- Image of C150data.com -->
-                    <!-- Another image of c150data.com -->
-                </div>
-            </div>
 
-        </div>
         <div class="container-fluid page-container" id="rowing-page-container">
             <div class="row page" id="rowing-page">
                 <div class="col-sm-6 vert-center-col">
