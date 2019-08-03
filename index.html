@@ -42,10 +42,11 @@
             <div id="mobile-overlay"></div>
             <nav class="nav-menu-container">
                 <ul id="nav-menu">
-                    <li>
-                        <a href="#details-page-container">About Me</a>
-                    </li>
+                    <!-- Temporary hiding of these headers until the pages are all implemented -->
                     <div style="display: none;">
+                        <li>
+                            <a href="#details-page-container">About Me</a>
+                        </li>
                         <li>
                             <a href="#projects-page-container">Projects</a>
                         </li>
@@ -68,7 +69,8 @@
                     <div class="name-section">
                         <h1>Max Amsterdam</h1>
                         <h2>Programmer/Student/Rower</h2>
-                        <button onclick="document.getElementById('details-page-container').scrollIntoView();" type="button" class="btn btn-default">Learn More</button>
+                        <button onclick="document.getElementById('details-page-container').scrollIntoView();"
+                            type="button" class="btn btn-default">Learn More</button>
                     </div>
                 </div>
                 <div class="col-lg-8 col-xl-7 profile-col">
@@ -90,15 +92,13 @@
                             When I was introduced to programming in high school, I immediately fell in love. I now know
                             that I want to pursue software development as a career.
                             I'm especially interested in web development, with experience working on web applications in
-                            <a href="#experience-page-container">professional environments</a> and building <a
-                                href="#projects-page-container">applications of my own</a> (one of which you're using
-                            right now!)
+                            professional environments and building applications of my own (one of which you're using right now!)
                         </p>
                         <p>
                             I started rowing seven years ago and haven't stopped since. I'm currently a member of the
                             Columbia Lightweight Rowing Team, an organization that has gifted me with gold medals,
                             lifelong friends, and a new perspective on hard work.
-                            Check out my rowing gallery <a href="#rowing-page-container">here</a>.
+                            <!-- Check out my rowing gallery <a href="#rowing-page-container">here</a>. -->
                         </p>
                         <p>
                             In my free time I enjoy playing ping pong, tinkering with mechanical keyboards, and cooking
@@ -109,11 +109,10 @@
                             personally!
                         </p>
                     </div>
-                    </p>
                 </div>
-                <div class="col-lg-4 vert-center-col" align="center">
-                    <div class="container" id="links-container">
-                        <div class="row links-row">
+                <div class="col-lg-4 vert-center-col" id="links-col-container" align="center">
+                    <div class="container-fluid" id="links-container">
+                        <div id="links-one-row" class="row links-row">
                             <div class="col">
                                 <a href="mailto: maxwell.amsterdam@columbia.edu">
                                     <i style="color: #ACE7FF" class="fas fa-paper-plane fa-5x"></i>
@@ -124,8 +123,6 @@
                                     <i style="color: #FFABAB" class="fab fa-github fa-5x"></i>
                                 </a>
                             </div>
-                        </div>
-                        <div class="row links-row">
                             <div class="col">
                                 <a href="https://www.linkedin.com/in/max-amsterdam" target="_blank">
                                     <i style="color: #BFFCC6" class="fab fa-linkedin-in fa-5x"></i>
@@ -137,8 +134,6 @@
                                     <i style="color: #FFCCF9" class="fas fa-file-alt fa-5x"></i>
                                 </a>
                             </div>
-                        </div>
-                        <div class="row links-row">
                             <div class="col">
                                 <a href="tel: 610-312-9011">
                                     <i style="color: #B28DFF" class="fas fa-phone fa-5x"></i>
@@ -150,9 +145,48 @@
                                 </a>
                             </div>
                         </div>
+                        <div id="links-three-rows">
+                            <div class="row links-row">
+                                <div class="col">
+                                    <a href="mailto: maxwell.amsterdam@columbia.edu">
+                                        <i style="color: #ACE7FF" class="fas fa-paper-plane fa-5x"></i>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.github.com/max-amsterdam" target="_blank">
+                                        <i style="color: #FFABAB" class="fab fa-github fa-5x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row links-row">
+                                <div class="col">
+                                    <a href="https://www.linkedin.com/in/max-amsterdam" target="_blank">
+                                        <i style="color: #BFFCC6" class="fab fa-linkedin-in fa-5x"></i>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://docs.google.com/document/d/1lMPi3fQ-vF5ha1b271PwYo6Ca8rjbTX0tKSjAwtWvG0/edit?usp=sharing"
+                                        target="_blank">
+                                        <i style="color: #FFCCF9" class="fas fa-file-alt fa-5x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row links-row">
+                                <div class="col">
+                                    <a href="tel: 610-312-9011">
+                                        <i style="color: #B28DFF" class="fas fa-phone fa-5x"></i>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.facebook.com/maxamsterdam2" target="_blank">
+                                        <i style="color: #FDFD97" class="fab fa-facebook fa-5x"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="container-fluid page-container" id="projects-page-container">
@@ -164,7 +198,8 @@
             <div class="row page-content-row" id="projects-content">
                 <div class="col-sm-6 vert-center-col" align="center" id="projects-text-col">
                     <p>
-                        I am the co-founder and creator of c150data.com, a website designed for the Columbia Lightweight
+                        I am the co-founder and creator of c150data.com, a website designed for the Columbia
+                        Lightweight
                         Rowing team.
                         This projects mission is xxxxxxxxxxxxxxxxx.
                         I discovered the problem of xxxxxxxxxxxxxxx, and developed a solution of xxxxx.
@@ -194,8 +229,10 @@
                             <img class="experience-logo" src="photos/clutch_logo.svg">
                         </div>
                         <p class="experience-text">
-                            My first internship ever was at Clutch, a small technology company that focuses on supplying
-                            businesses with a data-drive marketing platform. I worked for Clutch in the summer of 2018
+                            My first internship ever was at Clutch, a small technology company that focuses on
+                            supplying
+                            businesses with a data-drive marketing platform. I worked for Clutch in the summer of
+                            2018
                             as a Software Engineering Intern. I mainly worked on X while at Clutch, which helped
                             accomplish X, Y, and Z. This feature used A and B technologies.
                         </p>
@@ -205,9 +242,12 @@
                             <img class="experience-logo" src="photos/cardconnect_logo.png">
                         </div>
                         <p class="experience-text">
-                            In the summer of 2019, I worked for a medium sized technology company called CardConnect.
-                            CardConnect builds payment processing software that helps make credit card payments secure
-                            and reliable. At CardConnect, I worked as a Software Engineering Intern and worked on X, Y,
+                            In the summer of 2019, I worked for a medium sized technology company called
+                            CardConnect.
+                            CardConnect builds payment processing software that helps make credit card payments
+                            secure
+                            and reliable. At CardConnect, I worked as a Software Engineering Intern and worked on X,
+                            Y,
                             and Z. I worked with A, B, and C technologies while doing it.
                         </p>
                     </div>
@@ -226,19 +266,15 @@
             </div>
         </div>
 
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
 
-    </div>
-
-
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 </body>
 

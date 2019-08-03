@@ -1,6 +1,8 @@
 jQuery(document).ready(function ($) {
 
     updateNavigation();
+    fadeInLinks();
+    iconRestructure();
 
     $(window).scroll(function() {
         scrollNavigation();
@@ -21,6 +23,7 @@ jQuery(document).ready(function ($) {
     // Mobile Navigation
     $(window).on('resize', function () {
         updateNavigation();
+        iconRestructure();
     });
 
 });
@@ -37,7 +40,7 @@ function updateNavigation() {
         })
     } else {
         // Mobile view
-        $("#mobile-nav-toggle").show();
+        // $("#mobile-nav-toggle").show();
         $("#nav-menu").attr({
             'class': 'nav-menu-mobile'
         });
@@ -47,12 +50,24 @@ function updateNavigation() {
 function scrollNavigation() {
     if ($(this).scrollTop() > $(window).height() * .75) {
         $('.nav-name-container').fadeIn("slow");
-        $('.back-to-top').fadeIn('slow');
+        if($(window).width() > 600){
+            $('.back-to-top').fadeIn('slow');
+        }
         $('#header').addClass('header-fixed');
+        $(".nav-menu").fadeIn('slow');
     } else {
         $('.nav-name-container').fadeOut("fast");
-        $('.back-to-top').fadeOut('slow');
+        if($(window).width() > 600){
+            $('.back-to-top').fadeOut('slow');
+        }
         $('#header').removeClass('header-fixed');
+        $(".nav-menu").fadeOut('fast');
+    }
+}
+
+function fadeInLinks() {
+    if($(window).width() <= 425){
+        $('#links-col-container').delay(100).css({opacity: 1});
     }
 }
 
@@ -80,5 +95,16 @@ function escapeMobileNav(e){
             $('#mobile-overlay').fadeOut();
             $('#nav-menu').toggle();
         }
+    }
+}
+
+// Changes the icons from a 2x3 table view to all icons in 1 row (6x1)
+function iconRestructure(){
+    if($(window).width() >= 992){
+        $("#links-three-rows").show();
+        $("#links-one-row").hide();
+    }else{
+        $("#links-three-rows").hide();
+        $("#links-one-row").show();
     }
 }

@@ -70,25 +70,6 @@ body {
     transition: all 0.5s;
 }
 
-/* Learn More Button */
-.btn {
-    -webkit-appearance: button;
-    padding: 10px;
-    margin-top: 10px;
-    color: whitesmoke;
-    border: 2px solid whitesmoke;
-    border-radius: 40px;
-    background: transparent;
-    transition: all 0.3s ease 0s;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right:auto;
-}
-
-.btn:hover{
-    border-color: lightblue;
-    color: lightblue;
-}
 
 /* Back to Top Button */
 .back-to-top {
