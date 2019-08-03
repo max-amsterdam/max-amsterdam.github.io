@@ -1,0 +1,87 @@
+#landing-page-container {
+    height: 100vh;
+    overflow: auto;
+}
+
+/* Headshot */
+/* Name and subheader */
+.headshot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    max-height: 80%;
+}
+
+.name-section {
+    margin-top: 250px;
+    margin-left: 75px;
+}
+
+.name-section h1 {
+    font-size: 80px;
+}
+
+.name-section h2 {
+    font-size: 30px;
+}
+
+/* Learn More Button */
+.btn {
+    -webkit-appearance: button;
+    padding: 10px;
+    margin-top: 13px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.btn:hover{
+    border-color: lightblue;
+    color: lightblue;
+}
+
+@media (max-width: 991px){
+    .name-section{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: -webkit-center;
+    }
+   .name-section h1{
+        font-size: 60px;
+    }
+    .name-section h2{
+        font-size: 22px;
+    }
+    .name-col{
+        height: 40%;
+    }
+    .profile-col{
+        height: 60%;
+    }
+    .headshot{
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .name-section{
+        margin-top: 50px;
+    }
+    .name-col{
+        height: 50%;
+    }
+    .profile-col{
+        height: 50%;
+    }
+}
+

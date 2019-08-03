@@ -1,1 +1,6 @@
 *.un~
+*.DS_Store
+package-lock.json
+*.code-workspace
+*~
+.vscode

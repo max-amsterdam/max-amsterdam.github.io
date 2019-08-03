@@ -1,0 +1,136 @@
+#details-page-container {
+    background-color: whitesmoke;
+    color: black;
+    height: 100vh; 
+    overflow: auto;
+}
+
+/* Social links */
+#links-container {
+    margin-top: 100px;
+    font-size: 100%;
+}
+
+#links-three-rows {
+    display: none;
+}
+
+#links-one-row{
+    padding-top: 0px;
+}
+
+.links-row {
+    padding: 30px;
+}
+
+.links-row a {
+    color: inherit;
+}
+
+.links-row i {
+    font-size: 130px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* Details text */
+#details-text-col {
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+#details-text-col h1 {
+    font-size: 60px;
+}
+
+#details-text-col p, #details-text-col h4 {
+    margin-bottom: 20px;
+}
+
+#details-content {
+    padding-top: 10px;
+}
+
+@media (max-width: 1300px) {
+    .links-row {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .links-row i{
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    #details-text-color {
+        margin-top: 70px;
+    }
+    #links-container {
+        margin-top: 0px;
+    }
+    .links-row i {
+        font-size: 70px;
+    }
+    #details-text-col {
+        font-size: 18px;
+    }
+    #details-text-col h1 {
+        font-size: 35px;
+    }
+
+    #details-text-col h4 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    #details-page-container{
+        min-height: 100vh;
+        height: auto;
+    }
+    .links-row{
+        padding: 10px;
+    }
+
+    .links-row i {
+        font-size: 40px;
+    }
+
+    .links-row .col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+
+    #links-container {
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    #links-col-container {
+        opacity: 0;
+        position: fixed;
+        bottom: 5px;
+        transition: all 5s;
+    }
+
+    #details-text-col {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
+    #details-text-col h1 {
+        font-size: 40px;
+    }
+
+    #details-text-col h4 {
+        font-size: 20px;
+    }
+}

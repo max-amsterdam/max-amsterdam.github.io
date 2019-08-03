@@ -1,18 +1,281 @@
 <!doctype html>
 <html lang="en">
-    <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<title>Max Amsterdam</title>
-    </head>
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/rowing.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vollkorn" />
 
-    <body>
-	<h1>Hello! Welcome to my website!</h1>
-	<h2>This website has not launched yet. However, it is in active development! Check back soon!</h2>
-    </body>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <!-- Local Javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/e2cee4a830.js"></script>
+    <title>Max Amsterdam</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="nav-name-container">
+                <a href="#landing-page-container">
+                    <h2>Max Amsterdam</h2>
+                </a>
+            </div>
+            <button id="mobile-nav-toggle" type="button"><i class="fa fa-bars"></i></button>
+            <div id="mobile-overlay"></div>
+            <nav class="nav-menu-container">
+                <ul id="nav-menu">
+                    <!-- Temporary hiding of these headers until the pages are all implemented -->
+                    <div style="display: none;">
+                        <li>
+                            <a href="#details-page-container">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#projects-page-container">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience-page-container">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#rowing-page-container">Rowing</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="content">
+        <div class="container-fluid page-container" id="landing-page-container">
+            <div class="row page">
+                <div class="col-lg-4 col-xl-5 name-col">
+                    <div class="name-section">
+                        <h1>Max Amsterdam</h1>
+                        <h2>Programmer/Student/Rower</h2>
+                        <button onclick="document.getElementById('details-page-container').scrollIntoView();"
+                            type="button" class="btn btn-default">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-xl-7 profile-col">
+                    <img src="photos/profile_pic.png" class="headshot">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-container" id="details-page-container">
+            <div class="row page">
+                <div class="col-lg-8 vert-center-col order-lg-last" id="details-text-col">
+                    <div id="details-content">
+                        <h1>Hi, I'm Max</h1>
+                        <h4>
+                            I live in New York City and am originally from the Philadelphia area. I study Computer
+                            Science
+                            at Columbia University, and plan to graduate in the Spring of 2021.
+                        </h4>
+                        <p>
+                            When I was introduced to programming in high school, I immediately fell in love. I now know
+                            that I want to pursue software development as a career.
+                            I'm especially interested in web development, with experience working on web applications in
+                            professional environments and building applications of my own (one of which you're using right now!)
+                        </p>
+                        <p>
+                            I started rowing seven years ago and haven't stopped since. I'm currently a member of the
+                            Columbia Lightweight Rowing Team, an organization that has gifted me with gold medals,
+                            lifelong friends, and a new perspective on hard work.
+                            <!-- Check out my rowing gallery <a href="#rowing-page-container">here</a>. -->
+                        </p>
+                        <p>
+                            In my free time I enjoy playing ping pong, tinkering with mechanical keyboards, and cooking
+                            plant-based meals.
+                        </p>
+                        <p>
+                            Want to know more about me? Feel free to explore my social media or contact me
+                            personally!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 vert-center-col" id="links-col-container" align="center">
+                    <div class="container-fluid" id="links-container">
+                        <div id="links-one-row" class="row links-row">
+                            <div class="col">
+                                <a href="mailto: maxwell.amsterdam@columbia.edu">
+                                    <i style="color: #ACE7FF" class="fas fa-paper-plane fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.github.com/max-amsterdam" target="_blank">
+                                    <i style="color: #FFABAB" class="fab fa-github fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.linkedin.com/in/max-amsterdam" target="_blank">
+                                    <i style="color: #BFFCC6" class="fab fa-linkedin-in fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://docs.google.com/document/d/1lMPi3fQ-vF5ha1b271PwYo6Ca8rjbTX0tKSjAwtWvG0/edit?usp=sharing"
+                                    target="_blank">
+                                    <i style="color: #FFCCF9" class="fas fa-file-alt fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="tel: 610-312-9011">
+                                    <i style="color: #B28DFF" class="fas fa-phone fa-5x"></i>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.facebook.com/maxamsterdam2" target="_blank">
+                                    <i style="color: #FDFD97" class="fab fa-facebook fa-5x"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="links-three-rows">
+                            <div class="row links-row">
+                                <div class="col">
+                                    <a href="mailto: maxwell.amsterdam@columbia.edu">
+                                        <i style="color: #ACE7FF" class="fas fa-paper-plane fa-5x"></i>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.github.com/max-amsterdam" target="_blank">
+                                        <i style="color: #FFABAB" class="fab fa-github fa-5x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row links-row">
+                                <div class="col">
+                                    <a href="https://www.linkedin.com/in/max-amsterdam" target="_blank">
+                                        <i style="color: #BFFCC6" class="fab fa-linkedin-in fa-5x"></i>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://docs.google.com/document/d/1lMPi3fQ-vF5ha1b271PwYo6Ca8rjbTX0tKSjAwtWvG0/edit?usp=sharing"
+                                        target="_blank">
+                                        <i style="color: #FFCCF9" class="fas fa-file-alt fa-5x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row links-row">
+                                <div class="col">
+                                    <a href="tel: 610-312-9011">
+                                        <i style="color: #B28DFF" class="fas fa-phone fa-5x"></i>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://www.facebook.com/maxamsterdam2" target="_blank">
+                                        <i style="color: #FDFD97" class="fab fa-facebook fa-5x"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-container" id="projects-page-container">
+            <div class="row page-header-row" id="projects-header">
+                <div class="col vert-center-col">
+                    <h1>Personal Projects</h1>
+                </div>
+            </div>
+            <div class="row page-content-row" id="projects-content">
+                <div class="col-sm-6 vert-center-col" align="center" id="projects-text-col">
+                    <p>
+                        I am the co-founder and creator of c150data.com, a website designed for the Columbia
+                        Lightweight
+                        Rowing team.
+                        This projects mission is xxxxxxxxxxxxxxxxx.
+                        I discovered the problem of xxxxxxxxxxxxxxx, and developed a solution of xxxxx.
+                        Check out here for an outline of the goals and outlook for the project.
+                        Check out here for the Code repository.
+                        Visit the website here!
+                    </p>
+                </div>
+                <div class="col-sm-6 vert-center-col" id="projects-images-col" align="center">
+                    <p>IMAGE HERE</p>
+                    <p>IMAGE 2 HERE</p>
+                    <!-- Another image of c150data.com -->
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid page-container" id="experience-page-container">
+            <div class="page">
+                <div class="row page-header-row">
+                    <div class="col vert-center-col">
+                        <h1>Places I've Worked</h1>
+                    </div>
+                </div>
+                <div class="row page-content-row" align="center">
+                    <div class="col-lg-6">
+                        <div class="experience-logo-container">
+                            <img class="experience-logo" src="photos/clutch_logo.svg">
+                        </div>
+                        <p class="experience-text">
+                            My first internship ever was at Clutch, a small technology company that focuses on
+                            supplying
+                            businesses with a data-drive marketing platform. I worked for Clutch in the summer of
+                            2018
+                            as a Software Engineering Intern. I mainly worked on X while at Clutch, which helped
+                            accomplish X, Y, and Z. This feature used A and B technologies.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="experience-logo-container">
+                            <img class="experience-logo" src="photos/cardconnect_logo.png">
+                        </div>
+                        <p class="experience-text">
+                            In the summer of 2019, I worked for a medium sized technology company called
+                            CardConnect.
+                            CardConnect builds payment processing software that helps make credit card payments
+                            secure
+                            and reliable. At CardConnect, I worked as a Software Engineering Intern and worked on X,
+                            Y,
+                            and Z. I worked with A, B, and C technologies while doing it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid page-container" id="rowing-page-container">
+            <div class="row page" id="rowing-page">
+                <div class="col-sm-6 vert-center-col">
+                    rowing stuff
+                </div>
+                <div class="col-sm-6 vert-center-col">
+                    rowing
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
 
 </html>
