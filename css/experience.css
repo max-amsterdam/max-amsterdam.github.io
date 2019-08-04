@@ -1,8 +1,9 @@
 /* Experience Page */
 #experience-page-container {
-    background-color: whitesmoke;
+    background-color: lightgray;
     display: none;
     color: black;
+    height: 100vh;
 }
 
 .experience-logo-container {
