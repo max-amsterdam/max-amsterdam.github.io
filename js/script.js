@@ -20,6 +20,10 @@ jQuery(document).ready(function ($) {
         mobileNavToggleClick();
     })
 
+   $('#learn-more-button').click(function(e){
+       learnMoreClick(e);
+   }) 
+
     // Mobile Navigation
     $(window).on('resize', function () {
         updateNavigation();
@@ -107,4 +111,9 @@ function iconRestructure(){
         $("#links-three-rows").hide();
         $("#links-one-row").show();
     }
+}
+
+function learnMoreClick(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('#details-page-container').offset().top}, 100);
 }
