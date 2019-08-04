@@ -115,5 +115,5 @@ function iconRestructure(){
 
 function learnMoreClick(e){
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#details-page-container').offset().top}, 100);
+    $('html, body').animate({scrollTop: $('#details-page-container').offset().top}, 250);
 }
