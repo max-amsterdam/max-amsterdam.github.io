@@ -1,7 +1,7 @@
 #details-page-container {
     background-color: whitesmoke;
     color: black;
-    height: 100vh; 
+    height: 100vh;
     overflow: auto;
 }
 
@@ -32,6 +32,12 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+
+.links-row i:hover {
+    /* TODO add hover color to icons */
+}
+
+/* TODO move color styling of icons to here */
 
 
 #details-text-col h1 {
