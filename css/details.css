@@ -23,35 +23,57 @@
     padding: 30px;
 }
 
-.links-row a {
-    color: inherit;
-}
-
 .links-row i {
     font-size: 130px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    color: inherit;
+}
+.links-row a{
+    transition: color 2s;
+    -webkit-transition: color 2s;
 }
 
-.links-row i:hover {
-    /* TODO add hover color to icons */
+.links-row a:hover{
+    color: #000000;
 }
 
-/* TODO move color styling of icons to here */
+.email-link{
+    color: #ACE7FF;
+}
 
+.github-link{
+    color: #FFABAB;
+}
+
+.linkedin-link{
+    color: #BFFCC6;
+}
+
+.resume-link{
+    color: #FFCCF9;
+}
+
+.phone-link{
+    color: #B28DFF;
+}
+
+.facebook-link{
+    color: #FDFD97;
+}
 
 #details-text-col h1 {
-    font-size: 60px;
+    font-size: 65px;
 }
 
 #details-text-col h4 {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 /* Details text */
 #details-text-col {
     margin-top: 100px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #details-text-col p, #details-text-col h4 {
@@ -82,18 +104,21 @@
     #links-container {
         margin-top: 0px;
     }
-    .links-row i {
-        font-size: 70px;
+    #details-text-col h1 {
+        font-size: 60px;
     }
-    #details-text-col {
+    #details-text-col h4 {
+        font-size: 35px;
+    }
+    #details-content {
         font-size: 18px;
     }
-    #details-text-col h1 {
-        font-size: 45px;
-    }
 
-    #details-text-col h4 {
-        font-size: 24px;
+}
+
+@media (max-width: 780px) {
+    .links-row i {
+        font-size: 70px;
     }
 }
 
@@ -107,7 +132,7 @@
     }
 
     .links-row i {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .links-row .col {
@@ -126,6 +151,10 @@
         position: fixed;
         bottom: 5px;
         transition: all 5s;
+    }
+
+    .links-row i {
+        font-size: 40px;
     }
 
     #details-text-col {
